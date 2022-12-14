@@ -232,6 +232,44 @@ def population_total(data,d_transpose):
     india["Population, total"]= d_transpose1["India"]
     benin["Population, total"]= d_transpose1["Benin"]
     angola["Population, total"]= d_transpose1["Angola"]
+def corr_india(data_):
+    """
+    the function  corr_india takes data_ argument 
+
+    """
+    plt.figure(figsize=(15,11))
+    plt.title("india",size=30)
+    # correlating the data using corr()
+    cor = data_.corr()
+    # printing the shape of cor
+    print(cor.shape)
+    # plotting the heatmap
+    sns.heatmap(data=cor,annot=True,cmap="coolwarm")
+    plt.show()
+def corr_benin(data_):
+    """
+    the function corr_benin takes data_ as argument 
+
+    """
+    plt.figure(figsize=(15,11))
+    plt.title("Benin",size=30)
+    # correlating the data_ using corr() function
+    cor = data_.corr()
+    # plotting the heatmap
+    sns.heatmap(data=cor,annot=True,cmap="inferno")
+    plt.show()
+def corr_angola(data_):
+    """
+    the function corr_angola takes data_ as argument
+
+    """
+    plt.figure(figsize=(15,11))
+    plt.title("Angola",size=30)
+    # correlating the data_ using corr() function
+    cor = data_.corr()
+    # plotting the heatmap
+    sns.heatmap(data=cor,annot=True,cmap="plasma")
+    plt.show()    
 # calling the function dat_ and assinging in to two variables data and d_transpose
 data,d_transpose = data_("D:\\a\\new_data.xlsx")
 print(data)
