@@ -38,3 +38,7 @@ def data_(filename):
     # Statistical function returnns description of data on the data frame
     print(d_t.describe())
     return datas,d_t
+# calling the function dat_ and assinging in to two variables data and d_transpose
+data,d_transpose = data_("D:\\a\\new_data.xlsx")
+print(data)
+print(d_transpose)
