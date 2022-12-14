@@ -292,3 +292,8 @@ renew_energy(data,d_transpose)
 urban_population(data,d_transpose)  
 #calling function population_total
 population_total(data,d_transpose)
+# using scipy.stats to check pearson relation between dataframe
+print(st.pearsonr(india["Population, total"],india["CO2 emissions (kt)"]))
+print(st.pearsonr(angola["Access to electricity (% of population)"],angola["CO2 emissions (kt)"]))
+print(st.pearsonr(benin["Renewable energy consumption"],benin["CO2 emissions (kt)"]))
+print(st.pearsonr(india["Population, total"],benin["CO2 emissions (kt)"]))
