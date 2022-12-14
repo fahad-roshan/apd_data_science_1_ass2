@@ -236,3 +236,15 @@ def population_total(data,d_transpose):
 data,d_transpose = data_("D:\\a\\new_data.xlsx")
 print(data)
 print(d_transpose)
+#calling function co2
+co2(data,d_transpose)
+#calling function access_electricity
+access_electricity(data,d_transpose)  
+#calling function electric_cons
+electric_cons(data,d_transpose) 
+#calling function renew_energy 
+renew_energy(data,d_transpose)
+#calling function urban_population 
+urban_population(data,d_transpose)  
+#calling function population_total
+population_total(data,d_transpose)
